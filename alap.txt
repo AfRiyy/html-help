@@ -49,3 +49,11 @@ border: 2px dotted rgb(202, 199, 11);
     clear: both;
     display: table;
   }
+  
+<html lang="hu">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converse</title>
+</head>
