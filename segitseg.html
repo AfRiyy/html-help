@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="segitseg.css">
+    <title>Document</title>
+    <link rel="icon" href="/gyakorlas/icon.png">
+	
+	
+
+</head>
+<body>
+    <div class="header">
+        <p>Köszöntelek a weboldalamon!</p>
+        
+    </div>
+<div class="sidemenu">
+
+	
+</div>
+<div id="code hljs">
+    <h1>Code:</h1>
+    <pre>
+        <code class="html">
+            <h2>Basic html</h2>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+            &lt;title&gt;a weblap c&iacute;me&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;h1&gt;Egy c&iacute;m&lt;/h1&gt;
+            &lt;p&gt;asd&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+            &lt;html lang=&quot;hu&quot;&gt; = oldal nyelve
+            &lt;meta charset=&quot;utf-8&quot;&gt; = karakter k&oacute;dol&aacute;s
+            &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;icon.png&quot;&gt; = ikon beh&iacute;v&aacute;sa (ez van a title mellett mikor megnyitod az oldalt)
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt; =  k&uuml;l&ouml;nb&ouml;ző resolutionokn&aacute;l ne essen sz&eacute;t a weblap
+            &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;&gt; = css f&aacute;jlt &iacute;gy h&iacute;vsz be
+            <hr>
+        </code> 
+        <code class="css">
+        <h2>CSS</h2>
+            &lt;b&gt;bold&lt;/b&gt;
+            &lt;strong&gt;vastag&lt;/strong&gt;
+            &lt;i&gt;italic&lt;/i&gt;
+            &lt;em&gt;emphasized sz&ouml;veg&lt;/em&gt;
+            &lt;small&gt;kicsi betű&lt;/small&gt;
+            &lt;mark&gt;sz&ouml;vegkiemelő&lt;/mark&gt;
+            &lt;del&gt;kih&uacute;z&aacute;s&lt;/del&gt;
+            &lt;sub&gt;s&uuml;llyedt sz&ouml;veg&lt;/sub&gt;
+            &lt;sup&gt;felemelt sz&ouml;veg&lt;/sup&gt;
+        
+        
+
+        
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin-left: auto; középre rakás ezzel a kettővel!
+                margin-right: auto; !!!
+                background-image: url(/gyakorlas/background.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            p {    
+            border: 2px dotted rgb(202, 199, 11);
+            }
+            <h5>Clearfix</h5>
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+              }
+            
+        </code>
+        <code class="cisco">
+            <h2>Cisco</h2>
+            VLAN ON ROUTER
+            interface xy/y.z
+            encapsulation dot1Q X
+            ip address a.b.c.d m.m.m.m
+            
+            VLAN ON SWITCH
+            interface xy/y
+            switchport mode access
+            switchport access vlan X
+            
+            SWITCH CONNECTED TO SWITCH OR ROUTER
+            interface xy/y
+            switchport mode access trunk
+            
+            SET VLAN NAME
+            vlan X
+        </code>
+        
+
+    </pre>
+
+
+    <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"html"</span>&gt;</span>
+        <span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en-GB"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/css"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"main.css"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>My nature and wildlife blog<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"tree.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Tree"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"photo"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span></code>
+    </pre>
+</div>
+</body>
+</html>

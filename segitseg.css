@@ -1,0 +1,88 @@
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-image: url(/gyakorlas/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    border: 2px dotted rgb(202, 199, 11);
+    height: 50px;
+    color: rgb(162, 189, 43);
+    margin-bottom: 5px;
+
+}
+
+h1 {
+    font-family: courier;
+    color: #00E0C4;
+}
+
+p {
+    font-family: courier;
+    color: #2FB900;
+    margin-left: 25px;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: rgb(162, 189, 43);
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+button {
+    width: auto;
+    color: rgb(162, 189, 43);
+    background-color: rgb(48, 48, 48);
+}
+
+.sidemenu button:hover {
+    color: rgb(162, 189, 43);
+    background-color: rgb(61, 58, 8);
+}
+
+.sidemenu {
+    margin: 0px;
+    max-width: 200px;
+    height: 800px;
+    border: 2px dotted rgb(202, 199, 11);
+    float: left;
+    text-align: center;
+}
+
+.code {
+    background: grey;
+    color: #2FB900;
+    border: 2px dotted rgb(202, 199, 11);
+}
+
+.hljs h1 {
+    color: #2FB900;
+}
+
+.css {
+    background: grey;
+    z-index: -1;
+}
+
+.hljs {
+    background: grey;
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #2b2b2b;
+}
