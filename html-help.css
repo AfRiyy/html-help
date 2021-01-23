@@ -1,0 +1,98 @@
+* {
+    /*Ez egy több soros komment, a * mindenre érvényes az egész oldalon! */
+    box-sizing: content-box;
+}
+
+body {
+    /* mivel a body sima tag, nem class, ezér nem kell elé se pont se #!!!!*/
+    width: 1200px;
+    /* Szélessége a BODYNAK! */
+    margin: auto;
+    /*Margó */
+    padding: 0;
+    /*Belső margó! */
+    font-family: 'Courier New', Courier, monospace;
+    /* Betű stílus */
+    /* background: url('hatterkep.jpg'); Így kell megadni a hátteret képpel */
+    background: grey;
+    /* És így kell megadni a hátteret színnel */
+}
+
+/* Adjunk a h1-nek egy keretet!*/
+h1 {
+    /* itt hivatkozunk rá*/
+    border: 1px solid black;
+    /*Méret - forma - szín(lehet szín, lehet hexa #333333 vagy rgb(30,30,30) */
+    padding: 5px;
+    /* Hány pixelre legyen a keret a h1-től */
+    color: rgb(11, 83, 45);
+    /* Betűszín */
+}
+
+#elso-bekezdes {
+    letter-spacing: 15px;
+    /* Betűtávolság */
+    font-weight: bold;
+    /* Vastag betűs! */
+    text-align: center;
+    /* Középre helyezve! */
+}
+
+p {
+    text-align: justify;
+    /* Sorkizárt szöveg! */
+}
+
+#cica {
+    width: 400px;
+    /* Szélesség */
+    height: 300px;
+    /* Magasság */
+}
+
+.right::after {
+    /* Ez a clearfix */
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.right {
+    float: right;
+    /* Jobbra lebegtetés */
+}
+
+
+/* Bio div dolgai */
+.bio {
+    padding: 25px;
+    /* Bio div belső margó */
+    margin: 15px 15px 0 0;
+    /* Bio div margó */
+    float: left;
+    /* Bio div balra lebeg */
+    width: 400px;
+    /* Bio div szélessége */
+    border: 3px solid yellow;
+    /* Bio div a sárga keret */
+    background-color: lightgray;
+    /* Bio div szürke háttere */
+}
+
+.left {
+    float: left;
+    margin-right: 10px
+        /* csak jobb oldali margó */
+}
+
+
+ul li {
+    text-align: justify;
+}
+
+/* Died October 8 szöveg már nem a kép mellé megy, hanem alá emiatt: */
+.clr::before {
+    content: "";
+    clear: both;
+    display: table;
+}
