@@ -1,9 +1,13 @@
+nyaqu.ddns.net/segitseg
+nyaqu.ddns.net/vizsga/html-help
+
+Alap html kezdés, magyar nyelv, viewport, css beillesztve, utf-8 karakterkódolás és cím megadva
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <-- a viewport
+    <title>Document</title>   <-- A címet ezzel lehet megadni
 </head>
 <body>
     
@@ -29,6 +33,9 @@
 <del>kihúzás</del>
 <sub>süllyedt szöveg</sub>
 <sup>felemelt szöveg</sup>
+
+
+CSS:
 
 * {
     box-sizing: border-box;
