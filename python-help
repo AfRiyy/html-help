@@ -57,3 +57,43 @@ class Worker:
 		print("A nyíregyházi dolgozók: {}".format(counter)) #itt meg kiírjuk
     
     #ez a for ciklus az if-el tökéletes, ha egy adott dolgot keresünk, pl csak Nyíregyi dolgozókat
+    
+    https://szit.hu/doku.php?id=oktatas:programozas:programozasi_tetelek:python_megvalositas
+    
+#tételek:
+	#összegzés tétele
+    
+t = [ 3, 8, 2, 4, 5, 1, 6]
+ 
+osszeg = 0
+for num in t:
+    osszeg = osszeg + num
+ 
+print("Összeg: ", osszeg)
+
+	#megszámolás:
+t = [ 3, 8, 2, 4, 5, 1, 6]
+ 
+count = 0
+for num in t:
+    if num > 5:
+        count = count + 1
+ 
+print("5-nél nagyobb: ", count)
+
+	#szétválogatás:
+a = [ 3, 8, 2, 4, 5, 1, 6]
+b = []
+c = []
+ 
+for elem in a:
+    if elem < 5:
+        b.append(elem)
+    else:
+        c.append(elem)
+ 
+print(b)
+print(c)
+
+
+
