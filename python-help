@@ -1,0 +1,59 @@
+Egy osztály tárolásra, ebből készítünk objektumot
+class Employee:
+	def __init__(self):
+		self.name =""
+		self.city =""
+		self.address=""
+		self.salary=""
+		self.bonus=""
+		self.borndate=""
+		self.hiredate=""
+#Itt van a program elindítása, a példányosítás, és feltöltés adattal
+#mivel itt egy fájlban van a két osztály, így nem kell importálni!
+
+class Worker:
+	def __init__(self): #ez egy konstruktor, kötelező a classnak
+    
+        self.workerList=[]
+        self.readFile()
+        self.countNyiregyhazaWorker()
+        self.sumMiskolcSalary()
+        self.countPecsWorker()
+        self.writeGyorBonus()
+#A következő metódus a fájl beolvasása        
+	def readFile(self):
+		file = open("dolgozok.txt","r",encoding="utf-8") #fájl megnyitása adott helyről
+    
+		file.readline() #első sor beolvasása, ami a header, és nekünk nem kell semmire se
+		row = file.readline() #első sor amivel kezdünk is valamit
+		while(row): #ciklus
+			rowSplit=row.split(":") #szétválasztás : mentén
+			worker = Employee() #példányosítás az Employee osztályból
+			worker.name=rowSplit[0]
+			worker.city=rowSplit[1]
+			worker.address=rowSplit[2]
+			worker.salary=rowSplit[3]
+			worker.bonus=rowSplit[4]
+			worker.borndate=rowSplit[5]
+			worker.hiredate=rowSplit[6]
+            
+			self.workerList.append(worker) #workerlist-hez adása az objektumnak ami a worker!
+			
+			row = file.readline() #következő sor olvasása
+			
+		file.close() #fájl olvasásának lezárása
+    
+    
+    def countNyiregyhazaWorker(self): #metódus megnevezése, esetleg paraméterek felöltése, ami itt csak a self
+		
+		print("\nElső feladat: Nyíregyházi dolgozók megszámlálása") #print
+		
+		counter = 0 #egy int változó
+		
+		for worker in self.workerList: #ciklus amivel végigszaladunk a workerlist listán!
+			if(worker.city=="Nyíregyháza") #itt megnézzük, hogy az adott worker objektum amin állunk épp, annak a city változója mit tartalmaz, ha igaz, megyünk egy sorral lejjebb!
+                counter+=1 #növeljük a változót, mert találat van
+			
+		print("A nyíregyházi dolgozók: {}".format(counter)) #itt meg kiírjuk
+    
+    #ez a for ciklus az if-el tökéletes, ha egy adott dolgot keresünk, pl csak Nyíregyi dolgozókat
